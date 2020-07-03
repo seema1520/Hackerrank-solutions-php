@@ -1,0 +1,12 @@
+function simpleArraySum($ar) 
+{ 
+    // initialize sum 
+    $sum = 0;  $n = 10000;
+  
+    // Iterate through all elements  
+    // and add them to sum 
+    for ($i = 0; $i < $n; $i++) 
+    $sum += $ar[$i]; 
+  
+    return $sum; 
+} 
