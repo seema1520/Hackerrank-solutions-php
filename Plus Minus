@@ -1,0 +1,25 @@
+function plusMinus($arr) {
+
+    $pos = 0;
+    $neg = 0;
+    $zero = 0;
+
+    foreach ($arr as $key => $value) {
+
+        if ($value > 0) {
+            $pos++;
+        }
+        if ($value < 0) {
+            $neg++;
+        }
+        if ($value === 0) {
+            $zero++;
+        }
+    }
+
+echo $pos / sizeof($arr) . PHP_EOL;
+    echo $neg / sizeof($arr) . PHP_EOL;
+echo $zero / sizeof($arr) . PHP_EOL;
+
+
+}
